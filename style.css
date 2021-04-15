@@ -10,7 +10,7 @@ body {
 
 .calculator {
     background-color: #33032F;
-    height: 70vh;
+    height: 75vh;
     width: 70vw;
     border-radius: 10px;
     position: absolute;
@@ -18,6 +18,12 @@ body {
     left: 50%;
     box-shadow: 5px 15px 10px rgba(0,0,0,0.3);
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 320px) {
+    .calculator {
+        height: 80vh;
+    }
 }
 
 .display {
@@ -31,6 +37,10 @@ body {
     padding: 1rem;
 }
 
+.button-container {
+    display: grid;
+}
+
 .calculator-row1, 
 .calculator-row2,
 .calculator-row3,
@@ -38,7 +48,7 @@ body {
 .calculator-row5 {
     height: 12.5%;
     width: auto;
-    margin: 1rem;
+    margin: 0.5rem;
     border-radius: 10px;
 }
 
@@ -48,15 +58,33 @@ body {
     color: #000;
     font-size: 1.5rem;
     text-align: center;
-    margin: 0.5rem;
+    margin: 0 0.5rem;
     padding: 0.65rem;
     border-radius: 10px;
 }
 
 .col-3 {
-    width: 23%;
+    width: 22%;
 }
 
 .col-6 {
-    width: 48%;
+    width: 46%;
+}
+
+.col3:hover,
+.col6:hover {
+    background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .col-3, .col-6 {
+        font-size: 1rem;
+        margin: 0 0.25rem;
+    }
+    .col-3 {
+        width: 20%;
+    }
+    .col-6 {
+        width: 44%;
+    }
 }
