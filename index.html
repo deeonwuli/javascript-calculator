@@ -22,14 +22,13 @@
     
     <div class="calculator">
         <div>
-            <input id="display" type="text" value="0" placeholder="0" disabled />
+            <input id="display" type="text" placeholder="0" disabled />
         </div>
         <div class="container button-container">
             <div class="row calculator-row">
-              <button class="col-3">AC</button>
-              <button class="col-3">C</button>
-              <button class="col-3 operation">%</button>
-              <button class="col-3 operation">/</button>
+              <button class="col-6" value="AC">AC</button>
+              <button class="col-3" value=".">.</button>
+              <button class="col-3 operation" value="/">/</button>
             </div>
 
             <div class="row calculator-row">
@@ -54,8 +53,8 @@
             </div>
 
             <div class="row calculator-row">
-                <button class="col-6" value="0">0</button>
-                <button class="col-3" value=".">.</button>
+                <button class="col-9" value="0">0</button>
+                
                 <button class="col-3 operation" value="=">=</button>
             </div>
         </div>

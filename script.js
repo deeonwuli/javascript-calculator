@@ -3,19 +3,19 @@ const display = document.getElementById('display')
 
 input_buttons.forEach(
     function(button) {
-        button.addEventListener('click', calculate);
+        button.addEventListener('click', calculate)
     }
 )
 
 function calculate(event) {
-    const clickedButtonValue = event.target.value;
-    if (clickedButtonValue === '=') {
+    const clicked_value = event.target.value
+    if (clicked_value === '=') {
       if (display.value !== '') {
         display.value = eval(display.value);
       }
-    } else if (clickedButtonValue === 'C') {
+    } else if (clicked_value === 'AC') {
       display.value = '';
     } else {
-      display.value += clickedButtonValue;
+      display.value += clicked_value;
     }
   }
