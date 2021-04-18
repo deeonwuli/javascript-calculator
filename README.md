@@ -1,2 +1,2 @@
 # javascript-calculator
-A simple vanilla JS calculator for CcHub Developer internship application
+A simple vanilla JS calculator for CcHub Developer internship application by Chukwudumebi Onwuli.
