@@ -21,44 +21,47 @@
     </nav>
     
     <div class="calculator">
-        <div class="display">0</div>
+        <div>
+            <input id="display" type="text" value="0" placeholder="0" disabled />
+        </div>
         <div class="container button-container">
             <div class="row calculator-row1">
-              <div class="col-3">AC</div>
-              <div class="col-3">+/-</div>
-              <div class="col-3">%</div>
-              <div class="col-3">/</div>
+              <button class="col-3 all-clear">AC</button>
+              <button class="col-3 clear">C</button>
+              <button class="col-3 operation">%</button>
+              <button class="col-3 operation">/</button>
             </div>
 
             <div class="row calculator-row2">
-                <div class="col-3">7</div>
-                <div class="col-3">8</div>
-                <div class="col-3">9</div>
-                <div class="col-3">*</div>
+                <button class="col-3 input" value="7" onclick="displayNumber()">7</button>
+                <button class="col-3 input" value="8" onclick="displayNumber()">8</button>
+                <button class="col-3 input" value="9" onclick="displayNumber()">9</button>
+                <button class="col-3 operation">*</button>
             </div>
 
             <div class="row calculator-row3">
-                <div class="col-3">4</div>
-                <div class="col-3">5</div>
-                <div class="col-3">6</div>
-                <div class="col-3">-</div>
+                <button class="col-3 input" value="4" onclick="displayNumber()">4</button>
+                <button class="col-3 input" value="5" onclick="displayNumber()">5</button>
+                <button class="col-3 input" value="6" onclick="displayNumber()">6</button>
+                <button class="col-3 operation">-</button>
             </div>
 
             <div class="row calculator-row4">
-                <div class="col-3">1</div>
-                <div class="col-3">2</div>
-                <div class="col-3">3</div>
-                <div class="col-3">+</div>
+                <button class="col-3 input" value="1" onclick="displayNumber()">1</button>
+                <button class="col-3 input" value="2" onclick="displayNumber()">2</button>
+                <button class="col-3 input" value="3" onclick="displayNumber()">3</button>
+                <button class="col-3 operation">+</button>
             </div>
 
             <div class="row calculator-row5">
-                <div class="col-6">0</div>
-                <div class="col-3">.</div>
-                <div class="col-3">=</div>
+                <button class="col-6 input" value="0" onclick="displayNumber()">0</button>
+                <button class="col-3">.</button>
+                <button class="col-3 equal">=</button>
             </div>
         </div>
     </div>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
 </html>
