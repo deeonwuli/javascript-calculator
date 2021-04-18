@@ -11,10 +11,6 @@ function calculate(event) {
     const clicked_value = event.target.value
     if (clicked_value === '=') {
       if (display.value !== '') {
-        if (display.value = NaN) {
-            display.value = NaN
-            console.log(NaN)
-        }
         display.value = eval(display.value)
         console.log(display.value)
       }

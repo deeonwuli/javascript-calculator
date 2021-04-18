@@ -101,3 +101,8 @@ body {
         width: 42%;
     }
 }
+
+button:hover {
+    background-color: #000;
+    color: #F2F7F2;
+}
