@@ -106,3 +106,16 @@ button:hover {
     background-color: #000;
     color: #F2F7F2;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: #33032F;
+}
+
+footer i {
+    padding: 0 1rem;
+}
